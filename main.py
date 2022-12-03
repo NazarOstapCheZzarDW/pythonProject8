@@ -2,7 +2,7 @@ import telebot;
 import types;
 import message_api;
 import random;
-bot = telebot.TeleBot('5987833282:AAGUbvHQDirtaO1GzNuENM83J0lp5XG6fcw');
+bot = telebot.TeleBot('5656282498:AAEMbCMIXfYSqk6ThHt_pevJwiabBsLszFE');
 help = ['НИКАКОЙ ПОМОЩИ, ТОЛЬКО ХАРДКОР', 'НЕ СКАЖУ', 'я могу.. например.. поговорить с тобой']
 r1 = ['дела? хмм... даже не знаю, какие дела вообще могут быть у робота?', 'да нормально вроде, у владельца не отключили свет, и то хорошо', 'ах**** б*** н****! ']
 r2 = ['Героям Слава', 'БАМ БАМ БАМ', 'Батько наш Бандера...']
