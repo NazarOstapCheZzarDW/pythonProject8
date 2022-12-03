@@ -12,7 +12,7 @@ def get_text_messages(message):
 
 
         if message.text == "/start":
-            bot.send_message(message.from_user.id, "Привет. я - бот, но не ИИ. созданый учеником для экзамена в академию ШАГ")
+            bot.send_message(message.from_user.id, "Привет. я - бот, но не ИИ. созданый учеником для экзамена в академию ШАГ. если я молчу, значит я вас не понимаю. всё просто! А некоторые мои Реплики рандомные!")
             bot.send_message(message.from_user.id,
                                                   "если чё, могу помочь. напиши помогите")
         if message.text == "чо пон":
@@ -23,22 +23,21 @@ def get_text_messages(message):
 
 
 
-            if message.text == "ШАГ?":
+        if message.text == "ШАГ?":
                 bot.send_message(message.from_user.id, "https://vinnitsa.itstep.org/   -  ШАГ - отличная компьюиерная академия, которая находится по всей Украине!")
-            elif message.text == "помогите":
+        if message.text == "помогите":
                 bot.send_message(message.from_user.id, random.choice(help) )
 
 
-            else:
-                bot.send_message(message.from_user.id, "похоже, я не достаточно изучил ваш язык. я вас не понимаю")
-                if message.text == "давай поговорим" :
-                    bot.send_message(message.from_user.id, "давай, я люблю говорить! только очень плохо вас понимаю, по этому знаю мало фраз")
-                    if message.text == "Как дела?" :
-                    bot.send_message(message.from_user.id, random.choice(r1) )
-                    if message.text == "Слава Украине" :
-                    bot.send_message(message.from_user.id, random.choice(r2) )
-                    if message.text == "Пока" :
-                    bot.send_message(message.from_user.id, random.choice(r3) )
+
+        if message.text == "давай поговорим" :
+                bot.send_message(message.from_user.id, "давай, я люблю говорить! только очень плохо вас понимаю, по этому знаю мало фраз")
+        if message.text == "Как дела?" :
+                     bot.send_message(message.from_user.id, random.choice(r1) )
+        if message.text == "Слава Украине" :
+                     bot.send_message(message.from_user.id, random.choice(r2) )
+        if message.text == "Пока" :
+                     bot.send_message(message.from_user.id, random.choice(r3) )
 
 
 
